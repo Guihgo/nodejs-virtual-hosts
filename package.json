@@ -1,0 +1,20 @@
+{
+  "name": "redirect-domain",
+  "version": "1.0.0",
+  "description": "redirector of domains",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "keywords": [
+    "redirect",
+    "domain",
+    "subdomain"
+  ],
+  "author": "Guihgo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy": "^1.18.0"
+  }
+}
