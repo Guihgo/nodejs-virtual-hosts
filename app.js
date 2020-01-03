@@ -15,9 +15,9 @@ app.use((req, res, next) => {
     console.log('passou por aqui', req.hostname)
     let vHost = null;
     for (let i = 0; i < virtualHosts.length; i++) {
-        console.log(virtualHosts[i])
+        // console.log(virtualHosts[i])
         if (virtualHosts[i].hostnames.find(hostname => hostname == req.hostname)) {
-            console.log('achou', req.hostname);
+            console.log('Redirecionando para->', req.hostname);
             // res.redirect('http://127.0.0.1:3001')
             return proxy.web(req, res, { target: virtualHosts[i].target });
         }
